@@ -9,8 +9,8 @@ class Employee extends Model
 {
     use HasFactory;
 
-    public function Position()
+    public function position()
     {
-        return $this->belongsTo(position::class);
+        return $this->belongsTo(Position::class);
     }
 }
